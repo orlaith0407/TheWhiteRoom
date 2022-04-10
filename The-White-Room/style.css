@@ -1,0 +1,255 @@
+/* The code for this website is a variety of individual design and an online template from W3Schools
+W3schools.com. 2022. W3Schools online HTML editor. [online]
+Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h> [Accessed 5 March 2022]. */
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Verdana Pro Cond Light', sans-serif;}
+
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+.home {
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+  color: black;
+}
+
+.home h1 {
+  font-size: 128px;
+}
+
+.homeBtn {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.homeBtn:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.homeImg, .aboutImg, .footerImg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeImg {
+  background-image: url('images/Artboard 1.jpg');
+  min-height: 100%;
+}
+
+#myForm1Btn {
+  position: absolute;; /* Fixed/sticky position */
+  bottom: 45%; /* Place the button at the bottom of the page */
+  left: 45%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: inherit; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myForm1Btn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.aboutImg {
+  background-image: url("images/Artboard 2.jpg");
+  min-height: 100%;
+
+
+}
+
+.footerImg {
+  background-image: url("images/Artboard 1.jpg");
+  /*min-height: 200px;*/
+  height: 150px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+.filmContainer{
+  text-align: center;
+}
+
+.navbar {
+  background-color: white;
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#myForm2Btn {
+  /*position: absolute;; /* Fixed/sticky position */
+  /*bottom: 45%; /* Place the button at the bottom of the page */
+  /*left: 45%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 25px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+}
+
+#myForm2Btn:hover {
+  color: white;
+  background-color: black; /* Add a dark-grey background on hover */
+}
+
+#myAboutBtn {
+  /*position: absolute;; /* Fixed/sticky position */
+  /*bottom: 45%; /* Place the button at the bottom of the page */
+  /*left: 45%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: inherit; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+}
+
+#myAboutBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  opacity: 50%;
+}
+
+.hide{
+  display:none;
+}
+
+.show{
+  display:block;
+  color: black;
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /*padding: 0 4px;*/
+}
+
+.column {
+  flex: 20%;
+  /*padding: 0 4px;*/
+}
+
+.column img {
+  /*margin-top: 8px;*/
+  vertical-align: middle;
+}
+
+.column img:hover {
+  /*margin-top: 8px;*/
+  opacity: 70%;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding-top: 50px;
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+
+}
+
+.contact {
+  height: 150px;
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  background-color: black;
+  color: white;
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+}
+
+.contact a {
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
