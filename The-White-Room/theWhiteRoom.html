@@ -1,6 +1,7 @@
 <!-- The code for this website is a variety of individual design and an online template from W3Schools
 W3schools.com. 2022. W3Schools online HTML editor. [online]
-Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h> [Accessed 5 March 2022]. -->
+Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h [Accessed 5 March 2022]. -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,11 +10,10 @@ Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templ
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link href="http://fonts.cdnfonts.com/css/verdana-pro-cond" rel="stylesheet">
+    <link rel="stylesheet" href=https://www.w3schools.com/w3css/4/w3.css>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href=http://fonts.cdnfonts.com/css/verdana-pro-cond rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
@@ -34,26 +34,30 @@ Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templ
     <!-- Home Section -->
     <div class="homeImg home" id="home">
       <div class="w3-display-middle" id="home" style="white-space:nowrap;">
-        <span><h1>The <a href="form1.html"><button class="homeBtn"><h1>White</h1></button></a> Room</h1></span>
+        <span><h1 style="font-size:10vw;">The <a href="form1.html"><button class="homeBtn" style="font-size:10vw;"><h1 style="font-size:10vw;">White</h1></button></a> Room</h1></span>
       </div>
     </div>
+
+ 
 
     <!-- Film Section -->
     <div class="homeImg filmContainer">
       <div class="film" id="film" style="padding-top: 200px;">
         <!-- Film to be placed in line below -->
-        <!--<iframe width="1280" height="720" src="https://www.youtube.com/embed/5mOiWY2SW5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+        <!--<iframe width="50%" height="50%" src=https://www.youtube.com/embed/5mOiWY2SW5M title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
         <!-- Delete one linebelow whe movie is in place -->
-        <img src="images/TWR Coming Soon.png" style="border: 25px solid white; border-radius: 10px; height:1280; widht:720;">
+        <img src="images/TWR Coming Soon.png" style="border: 25px solid white; border-radius: 10px; height:50%; width:50%;">
       </div>
       <div class="survey2" id="survey2" style="padding-bottom: 25px; padding-top:20px;">
         <a href="form2.html"><button id="myForm2Btn" title="continue" >Post-Screening Survey</button></a>
       </div>
     </div>
 
+ 
+
     <!-- About Section -->
     <div class="aboutImg w3-display-container " id="about">
-		  <div class="w3-display-middle">
+      <div class="w3-display-middle">
         <button onclick="displayBox()" id="myAboutBtn">
           <h1 style="color: white;">A B O U T</h1>
         </button>
@@ -61,21 +65,19 @@ Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templ
           <img src="images/rectangle.png" style="height: 400px; width: 750px;">
           <div class="hide" id="text">
             <p>‘The White Room’ is a short film that follows Seamus, who is living with Dementia.We look into an average day in his life, showing both the struggles and moments of clarity he faces. We explore his relationship with granddaughter Croía, demonstrating the caring role she plays in his life, and ultimately how she needs him as much as he needs her. </p>
-
 <p> The production of this film was the basis of a research project that investigates how an audience reacts to various film techniques throughout a short film which explores the theme of Dementia. </p>
-
 <p> The main aim of ‘The White Room’ is to accurately portray Dementia in film, steer away from the negative stereotypes often seen in film. We also want our audience to gain a greater understanding of Dementia, sparking thought and conversation on the topic.
               </p>
           </div>
         </div>
       </div>
-  	</div>
-
+    </div>
+ 
     <!-- Gallery Section -->
     <div class="gallery" id="gallery">
       <div class="row">
         <div class="column">
-          <img src="images/mj.JPG" style="width:100%" onclick="onClick(this)" alt="MJ O'Sullivan Elderly Seamus">
+          <img src="images/mj.JPG" style="width:100%" onclick="onClick(this)" alt="Elderly Seamus">
           <img src="images/mikeybed.JPG" style="width:100%" onclick="onClick(this)" alt="Waking up in The White Room">
           <img src="images/whiteroombts.JPG" style="width:100%" onclick="onClick(this)" alt="Behind The Scenes">
           <img src="images/mikeyjessreading.JPG" style="width:100%" onclick="onClick(this)" alt="Revising The Script">
@@ -83,7 +85,7 @@ Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templ
         </div>
         <div class="column">
           <img src="images/mjreading.JPG" style="width:100%; " onclick="onClick(this)" alt="Seamus reading sheet music">
-          <img src="images/mikey.JPG" style="width:100%" onclick="onClick(this)" alt="Mikey cullen as Young Seamus">
+          <img src="images/mikey.JPG" style="width:100%" onclick="onClick(this)" alt="Young Seamus">
           <img src="images/mirror.JPG" style="width:100%; " onclick="onClick(this)" alt="Croias Reflection">
           <img src="images/bts.JPG" style="width:100%" onclick="onClick(this)" alt="Behind The Scenes">
           <img src="images/crew.JPG" style="width:100%" onclick="onClick(this)" alt="The Crew">
@@ -91,7 +93,7 @@ Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templ
         <div class="column">
           <img src="images/bedroombts.JPG" style="width:100%;" onclick="onClick(this)" alt="Behind The Scenes">
           <img src="images/double.JPG" style="width:100%" onclick="onClick(this)" alt="Old and Young">
-          <img src="images/jess.JPG" style="width:100%" onclick="onClick(this)" alt="Jess McLaughlin as Croía">
+          <img src="images/jess.JPG" style="width:100%" onclick="onClick(this)" alt="Croia">
           <img src="images/mjjesstalking.png" style="width:100%" onclick="onClick(this)" alt="Grandfather & Grandaughter">
           <img src="images/script.JPG" style="width:100%" onclick="onClick(this)" alt="The Script">
         </div>
@@ -107,20 +109,23 @@ Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templ
       </div>
     </div>
 
-	  <!-- Footer -->
+ 
+    <!-- Footer -->
     <div class="contact" id="contact">
       <div class="footerImg">
-    	  <footer style="padding-top: 30px;">
-          <a href="https://www.instagram.com/thewhiteroom_film/">
+        <footer style="padding-top: 30px;">
+          <a href=https://www.instagram.com/thewhiteroom_film/>
             <i class="fab fa-instagram fa-2x w3-hover-opacity" style="color: white;"></i>
           </a>
-          <a href="https://www.tiktok.com/@thewhiteroom_film">
+          <a href=https://www.tiktok.com/@thewhiteroom_film>
             <i class="fab fa-tiktok fa-2x w3-hover-opacity" style="color: white;"></i>
           </a>
           <p>Powered by DCU Multimedia 2022</p>
         </footer>
       </div>
     </div>
+
+ 
 
     </body>
   <script src="script.js"></script>
