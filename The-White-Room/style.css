@@ -23,8 +23,8 @@ body, html {
   background-color: black;
   color: white;
   border: none;
-  height: 200px;
-  border-radius: 10px;
+  height: 200%;
+  border-radius: 10%;
 }
 
 .homeBtn:hover {
