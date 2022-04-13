@@ -16,20 +16,33 @@ Available at: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templ
     <link href="http://fonts.cdnfonts.com/css/verdana-pro-cond" rel="stylesheet">
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="navbar">
-      <a href="theWhiteRoom.html#home">The White Room</a>
-      <a href="theWhiteRoom.html#film">Watch Film</a>
-      <a href="theWhiteRoom.html#about">About</a>
-      <a href="theWhiteRoom.html#gallery">Gallery</a>
-      <div class="dropdown">
-        <button class="dropbtn">Survey</button>
-        <div class="dropdown-content">
-          <a href="form1.html">Pre-Screening Survey</a>
-          <a href="form2.html">Post-Screening Survey</a>
+    <!-- Navbar (sit on top) -->
+      <div class="navbar">
+        <a class="w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="theWhiteRoom.html#home">The White Room</a>
+        <a href="theWhiteRoom.html#film" class="w3-hide-small">Watch Film</a>
+        <a href="theWhiteRoom.html#about" class="w3-hide-small">About</a>
+        <a href="theWhiteRoom.html#gallery" class="w3-hide-small">Gallery</a>
+        <div class="dropdown w3-hide-small">
+          <button class="dropbtn">Survey</button>
+          <div class="dropdown-content">
+            <a href="form1.html">Pre-Screening Survey</a>
+            <a href="form2.html">Post-Screening Survey</a>
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="z-index: 1; position: fixed; font-family: 'Verdana Pro Cond Light', sans-serif; font-size: 16px;">
+        <a href="theWhiteRoom.html#home" class="w3-bar-item w3-button" onclick="toggleFunction()">The White Room</a>
+        <a href="theWhiteRoom.html#film" class="w3-bar-item w3-button" onclick="toggleFunction()">Watch Film</a>
+        <a href="theWhiteRoom.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+        <a href="theWhiteRoom.html#gallery" class="w3-bar-item w3-button" onclick="toggleFunction()">Gallery</a>
+        <a href="form1.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Pre-Screening Survey</a>
+        <a href="form2.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Post-Screening Survey</a>
+      </div>
 
     <!-- Form Section -->
     <div class="filmContainer" id="survey2">
