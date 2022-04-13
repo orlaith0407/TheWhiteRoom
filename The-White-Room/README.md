@@ -4,4 +4,4 @@ This repository contains all the files necessary to create the website for "The 
 
 This website is for promotion and viewing of a short film called "The White Room". This short file was created by a group of Multimedia students in their final year in Dublin City University.
 
-This website is available at www.thewhiteroomfilm.ie
+This website is available at http://thewhiteroomfilm.ie
