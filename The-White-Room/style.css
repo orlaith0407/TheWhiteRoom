@@ -66,9 +66,8 @@ body, html {
 
 .aboutImg {
   background-image: url("images/Artboard 2.jpg");
-  min-height: 100%;
-
-
+  height: 100%;
+  width: 100%;
 }
 
 .footerImg {
@@ -187,6 +186,7 @@ body, html {
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   font-family: 'Verdana Pro Cond Light', sans-serif;
+  height: 200%;
 }
 
 #myAboutBtn:hover {
@@ -230,10 +230,10 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  padding-top: 50px;
+  width: 90%;
+  padding-top: 25%;
   font-family: 'Verdana Pro Cond Light', sans-serif;
-
+  font-size: 1vw;
 }
 
 .contact {
@@ -252,4 +252,11 @@ body, html {
   padding: 15px 15px;
   text-decoration: none;
   font-size: 16px;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .homeImg, .aboutImg, .footerImg {
+    background-attachment: scroll;
+    min-height: 100%;
+  }
 }
