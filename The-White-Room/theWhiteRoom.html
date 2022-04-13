@@ -16,20 +16,34 @@ Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templa
     <link href=http://fonts.cdnfonts.com/css/verdana-pro-cond rel="stylesheet">
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="navbar">
-      <a href="theWhiteRoom.html#home">The White Room</a>
-      <a href="theWhiteRoom.html#film">Watch Film</a>
-      <a href="theWhiteRoom.html#about">About</a>
-      <a href="theWhiteRoom.html#gallery">Gallery</a>
-      <div class="dropdown">
-        <button class="dropbtn">Survey</button>
-        <div class="dropdown-content">
-          <a href="form1.html">Pre-Screening Survey</a>
-          <a href="form2.html">Post-Screening Survey</a>
+
+    <!-- Navbar (sit on top) -->
+      <div class="navbar">
+        <a class="w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="theWhiteRoom.html#home">The White Room</a>
+        <a href="theWhiteRoom.html#film" class="w3-hide-small">Watch Film</a>
+        <a href="theWhiteRoom.html#about" class="w3-hide-small">About</a>
+        <a href="theWhiteRoom.html#gallery" class="w3-hide-small">Gallery</a>
+        <div class="dropdown w3-hide-small">
+          <button class="dropbtn">Survey</button>
+          <div class="dropdown-content">
+            <a href="form1.html">Pre-Screening Survey</a>
+            <a href="form2.html">Post-Screening Survey</a>
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="z-index: 1; position: fixed; font-family: 'Verdana Pro Cond Light', sans-serif; font-size: 16px;">
+        <a href="theWhiteRoom.html#home" class="w3-bar-item w3-button" onclick="toggleFunction()">The White Room</a>
+        <a href="theWhiteRoom.html#film" class="w3-bar-item w3-button" onclick="toggleFunction()">Watch Film</a>
+        <a href="theWhiteRoom.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+        <a href="theWhiteRoom.html#gallery" class="w3-bar-item w3-button" onclick="toggleFunction()">Gallery</a>
+        <a href="form1.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Pre-Screening Survey</a>
+        <a href="form2.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Post-Screening Survey</a>
+      </div>
 
     <!-- Home Section -->
     <div class="homeImg home" id="home">
@@ -37,8 +51,6 @@ Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templa
         <span><h1 style="font-size:10vw;">The <a href="form1.html"><button class="homeBtn" style="font-size:10vw;"><h1 style="font-size:10vw;">White</h1></button></a> Room</h1></span>
       </div>
     </div>
-
- 
 
     <!-- Film Section -->
     <div class="homeImg filmContainer">
@@ -53,26 +65,23 @@ Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templa
       </div>
     </div>
 
- 
-
     <!-- About Section -->
     <div class="aboutImg w3-display-container " id="about">
       <div class="w3-display-middle">
         <button onclick="displayBox()" id="myAboutBtn">
-          <h1 style="color: white;">A B O U T</h1>
+          <h1 style="color: white; font-size:5vw;">A B O U T</h1>
         </button>
         <div class="hide" id="textBox">
-          <img src="images/rectangle.png" style="height: 400px; width: 750px;">
+          <img src="images/rectangle.png" style="min-height: 100%; width: 110%; align: center;">
           <div class="hide" id="text">
             <p>‘The White Room’ is a short film that follows Seamus, who is living with Dementia.We look into an average day in his life, showing both the struggles and moments of clarity he faces. We explore his relationship with granddaughter Croía, demonstrating the caring role she plays in his life, and ultimately how she needs him as much as he needs her. </p>
-<p> The production of this film was the basis of a research project that investigates how an audience reacts to various film techniques throughout a short film which explores the theme of Dementia. </p>
-<p> The main aim of ‘The White Room’ is to accurately portray Dementia in film, steer away from the negative stereotypes often seen in film. We also want our audience to gain a greater understanding of Dementia, sparking thought and conversation on the topic.
-              </p>
+            <p> The production of this film was the basis of a research project that investigates how an audience reacts to various film techniques throughout a short film which explores the theme of Dementia. </p>
+            <p> The main aim of ‘The White Room’ is to accurately portray Dementia in film, steer away from the negative stereotypes often seen in film. We also want our audience to gain a greater understanding of Dementia, sparking thought and conversation on the topic.</p>
           </div>
         </div>
       </div>
     </div>
- 
+
     <!-- Gallery Section -->
     <div class="gallery" id="gallery">
       <div class="row">
@@ -109,7 +118,6 @@ Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templa
       </div>
     </div>
 
- 
     <!-- Footer -->
     <div class="contact" id="contact">
       <div class="footerImg">
@@ -124,8 +132,6 @@ Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templa
         </footer>
       </div>
     </div>
-
- 
 
     </body>
   <script src="script.js"></script>
